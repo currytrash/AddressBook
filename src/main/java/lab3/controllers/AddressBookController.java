@@ -22,6 +22,6 @@ public class AddressBookController {
                 AddressBook addressBook = new AddressBook();
                 addressBookRepository.save(addressBook);
                 model.addAttribute("id",addressBook.getId());
-                return "addAdressBook";
+                return "createAddressBook";
         }
 }
