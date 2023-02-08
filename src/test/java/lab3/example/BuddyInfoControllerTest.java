@@ -4,7 +4,7 @@ import lab3.repo.AddressBookRepository;
 import lab3.repo.BuddyInfoRepository;
 import lab3.services.AddressBookService;
 import lab3.services.BuddyInfoService;
-import org.aspectj.lang.annotation.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -48,7 +48,7 @@ public class BuddyInfoControllerTest {
     @MockBean
     private BuddyInfoRepository buddyInfoRepository;
 
-    @BeforeAll
+    @BeforeEach
     public void setUp() {
         BuddyInfo buddy = new BuddyInfo("Yahya","123 Sesame Street", "999-999-9999");
         when(buddyInfoRepository.findById(1L)).thenReturn(java.util.Optional.of(buddy));

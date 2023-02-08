@@ -22,8 +22,8 @@ public class AddressBookControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @MockBean
-    private AddressBookService addressBookServiceservice;
+    @Autowired
+    private AddressBookService addressBookService;
 
     @Test
     public void createAddressBookTest() throws Exception {
