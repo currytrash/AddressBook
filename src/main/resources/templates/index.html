@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Address Book Application</title>
+</head>
+<body>
+<h1>Welcome to the Address Book Application</h1>
+
+<p>Click on the links below to navigate the application:</p>
+<ul>
+  <li><a th:href="@{/addAddressBook}">Create AddressBook</a></li>
+  <li><a th:href="@{/buddies}">View Buddy List</a></li>
+  <li><a th:href="@{/addbuddy}">Add a Buddy</a></li>
+  <li><a th:href="@{/removebuddy}">Remove a Buddy</a></li>
+</ul>
+</body>
+</html>
